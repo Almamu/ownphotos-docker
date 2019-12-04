@@ -42,6 +42,7 @@ services:
     container_name: ownphotos-backend
     volumes:
       # Your photos go here
+      - ../ownphotos/:/root/app/
       - ../pictures/:/data
       - ../thumbnails/:/code/protected_media
       - ../logs/:/root/app/logs/
